@@ -1,0 +1,130 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+#main {
+	transition: margin-left .5s;
+}
+
+#header_bild {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#info_bereich {
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 1%; 
+}
+
+#ueberschrift {
+	padding-top: 0.5%;
+	color: #1A0834;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#text {
+	color: #8A888E;
+	font-size: 1.25em;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#youtube-player {
+	position: relative;
+	padding-left: 15%;
+	padding-top: 2%;
+	padding-left: 15%;
+	
+}
+
+#video-kommentar {
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 0;
+	color: #8A888E;
+	font-size: 1.25em;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#footer {
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+#icon {
+	width: 25px;
+}
+
+#pfeil {
+	background-color: Transparent;
+	background-image: url(../bilder/pfeil.png);
+	background-size: inherit;
+	position: absolute;
+	top: 85%;
+	right: 5%;
+	width: 60;
+	height: 60px;
+	border: none;
+}
+
+#link {
+	text-decoration: none;
+}
+
+.underline {
+	border-bottom: 2px solid #EE3C3C;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 1.25em;
+	color: #8A888E;
+	font-family: Tahoma, Geneva, sans-serif;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.open_button {
+	font-size: 30px;
+	border: none;
+	background-color: Transparent;
+	outline: none;
+	position: fixed;
+	top: 5%;
+	left: 5%;
+}
+
+@media screen and (max-height: 450) {
+	.sidenav{padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}

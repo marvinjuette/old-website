@@ -1,0 +1,9 @@
+##nachricht##
+
+~~~~~~~~~~~~~~~~~~~~
+
+Datum: ##DATUM##
+Uhrzeit: ##UHRZEIT##
+E-Mail: ##absender##
+
+~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Kontakt</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/kontakt.css">
+	</head>
+	<body>
+		<div id="navbar" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Startseite</a>
+			<a href="kontakt.html">Kontakt</a>
+			<a href="about.html">About</a>
+			<a href="datenschutzerklaerung.html">Datenschutz</a>
+			<a href="impressum.html">Impressum</a>
+		</div>	
+		<div id="startseite">
+			<a href="index.html" id="link">
+				<h2 id="textToStartpage">
+					Nivram710
+				</h2>
+			</a>
+		</div>
+		<div id="main">
+			<button class="open_button" onclick="openNav()">☰</button>
+			<h1 id="ueberschrift">
+				Kontakt:
+			</h1>
+			<div id="formular">
+				<label id="label">Deine E-Mail Addresse</label>
+				<form id="kontaktformular" name="kontaktformular" action="http://www.formular-chef.de/fc.cgi" method="post">
+				<input type="hidden" name="empfaenger" value="contact@nivram710.de" />
+				<input type="hidden" name="betreff" value="Kontakt Formular">
+				<input type="hidden" name="email_template" value="https://www.dropbox.com/s/0pd3sd88sz95ppp/email.txt?dl=1">
+				<input type="hidden" name="antwortseite_template" value="https://www.dropbox.com/s/3rqupamofoh3ea2/versand_erfolgreich.html?dl=1">
+				<input type="hidden" name="pflicht" value="nachricht">
+				<br>
+				<input type="text" id="emailFeld" name="absender">
+				<br><br>
+				<label id="label">Nachricht</label>
+				<br>
+				<textarea id="nachricht" name="nachricht"></textarea>
+				<br><br>
+				<input type="submit" value="Senden" id="button"/>
+			</div>
+			<div id="info_bereich">
+				<font id="text">
+					<p>Du hast eine Frage oder möchtest mir was sagen?</p>
+					<p>Dann kontaktiere mich doch einfach!</p>
+					<p>Ich werde dir auch schnellst möglich antworten!</p>
+					<p>Aber wenn ich dir Antworten soll, dann darfst du 
+					nicht vergessen deine E-Mail anzugeben!</p>
+				</font>
+			</div>
+		</div>
+		<div id="footer">
+			<font id="text">
+				<span  class="underline">
+					Folge mir:
+				</span>
+			<font>
+			<br><br>
+			<a href="http://yt.nivram710.de" id="link" title="YouTube" target="_blank">
+				<img src="bilder/YouTube.png" id="icon">
+			</a>
+			<a href="http://twitter.nivram710.de" id="link" title="Twitter" target="_blank">
+				<img src="bilder/Twitter.png" id="icon">
+			</a>
+			<a href="http://gp.nivram710.de" id="link" title="Google Plus" target="_blank">
+				<img src="bilder/Google-Plus.png" id="icon">
+			</a>
+			<a href="http://gh.nivram710.de" id="link" title="GitHub" target="_blank">
+				<img src="bilder/github.png" id="icon">
+			</a>
+		</div>
+		<script>
+			function openNav() 
+			{
+				document.getElementById("navbar").style.width = "250px";
+			}
+			
+			function closeNav() 
+			{
+				document.getElementById("navbar").style.width = "0px";
+			}
+		</script>
+	</body>
+</html>
