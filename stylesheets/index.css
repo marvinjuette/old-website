@@ -3,6 +3,10 @@ body {
 	margin: 0px;
 }
 
+a {
+    color: forestgreen;
+}
+
 #main {
 	transition: margin-left .5s;
 }
@@ -10,7 +14,6 @@ body {
 #header_bild {
 	width: 100%;
 	height: 100%;
-	position: relative;
 }
 
 #info_bereich {
@@ -31,12 +34,15 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 }
 
-#youtube-player {
-	position: relative;
+#youtube {
 	padding-left: 15%;
 	padding-top: 2%;
 	padding-left: 15%;
-	
+}
+
+#youtube-player {
+    width: 1080px;
+    height: 720px;
 }
 
 #video-kommentar {
@@ -124,7 +130,35 @@ body {
 	left: 5%;
 }
 
+.open_button:hover {
+    background-color: mediumpurple;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    #youtube-player {width: 720px; height: 480px}
+}
+
+@media screen and (max-width: 780px) {
+    #youtube-player {width: 480px; height: 360px}
+}
+
+@media screen and (max-width: 720px) {
+    #youtube-player {width: 0px; height: 0px}
+    #video-kommentar {font-size: 0px;}
+    #close_button {padding-right: 5%}
+    #header_bild {width: 0px; height: 0px}
+    #ueberschrift {padding-top: 10%}
+    .sidenav a {padding: 7.5% 30% 7.5% 30%; text-align: center}
+    .open_button {font-size: 25px}
+}
+
 @media screen and (max-height: 450) {
-	.sidenav{padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
+	.sidenav {padding-top: 15px}
+    .sidenav a {padding: 15% 30% 6% 30%; text-align: center; font-size: 18px}
+    #close_button {padding-right: 5%}
+    #youtube-player {width: 0px; height: 0px}
+    #video-kommentar {font-size: 0px;}
+    #header_bild {width: 0px; height: 0px}
+    #ueberschrift {padding-top: 10%}
 }

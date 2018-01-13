@@ -1,12 +1,16 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Impressum</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/impressum.css">
+        <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
 	</head>
 	<body>
 		<div id="navbar" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close_button">&times;</a>
 			<a href="index.html">Startseite</a>
 			<a href="kontakt.html">Kontakt</a>
 			<a href="about.html">About</a>
@@ -15,7 +19,7 @@
 		</div>
 		<div id="main">
 			<button class="open_button" onclick="openNav()">☰</button>
-			<h1 id="ueberschrift">Impressum</h1>
+			<h1 id="main_ueberschrift">Impressum</h1>
 			<h2 id="ueberschrift">Angaben gem&auml;&szlig; &sect; 5 TMG:</h2> 
 			<p id="text">Marvin J&uuml;tte<br />
 			Carl-Isert Weg, 34<br /> 
@@ -70,7 +74,11 @@
 		<script>
 			function openNav() 
 			{
-				document.getElementById("navbar").style.width = "250px";
+                if (screen.width <= 720) {
+				    document.getElementById("navbar").style.width = "100%";
+                } else {
+				    document.getElementById("navbar").style.width = "250px";
+                }
 			}
 			
 			function closeNav() 

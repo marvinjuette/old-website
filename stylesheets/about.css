@@ -3,6 +3,10 @@ body {
 	margin: 0px;
 }
 
+a {
+    color: forestgreen;
+}
+
 #textToStartpage {
 	color: #1A0834;
 	font-family: Tahoma, Geneva, sans-serif;
@@ -44,23 +48,28 @@ body {
 }
 
 #software {
+	width: 65%;
 	display: block;
-	float: left;
+    float: left;
 }
 
 #hardware {
+    width: 65%;
 	display: block;
 	float: left;
 }
 
 #twitter {
-	width: 30%;
-	float: right;
+    height: auto;
+	width: auto;
+	padding-top: 2%;
+	padding-left: 50%;
+    position: absolute;
 }
 
 #footer {
-	float: left;
-	padding-left: 15%;
+    float: left;
+	padding-left: 0%;
 	padding-right: 15%;
 	padding-top: 1%;
 	padding-bottom: 2%;
@@ -123,7 +132,37 @@ body {
 	left: 5%;
 }
 
+.open_button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 720px) {
+    #close_button {padding-right: 5%}
+    #twitter {display: none; width: 0px; height: 0px}
+    #ueberschrift {padding-top: 0%; padding-bottom: 0%; font-size: 1.4em}
+    #main {padding-right: 0px}
+    #ueber_mich {font-size: 0.8em}
+    #software {font-size: 0.8em}
+    #hardware {font-size: 0.8em}
+    body {padding-top: 10%}
+    .sidenav a {padding: 7.5% 30% 7.5% 30%; text-align: center}
+    .open_button {font-size: 25px}
+}
+
 @media screen and (max-height: 450) {
-	.sidenav{padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
+	.sidenav {padding-top: 15px}
+	.sidenav a {font-size: 18px}
+    .sidenav a {padding: 15% 30% 6% 30%; text-align: center}
+    #close_button {padding-right: 5%}
+    #twitter {display: none; width: 0px; height: 0px}
+    #ueberschrift {padding-top: 0%; padding-bottom: 0%; font-size: 1.4em}
+    #main {padding-right: 0px}
+    #ueber_mich {font-size: 0.8em}
+    #software {font-size: 0.8em}
+    #hardware {font-size: 0.8em}
 }

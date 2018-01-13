@@ -1,95 +1,102 @@
 body {
-	padding: 0px;
-	margin: 0px;
+    padding: 0;
+    margin: 0;
+    display: block
+}
+
+#startseiteTextDiv {
+    float: right;
+    width: auto;
+    padding-right: 10%;
+    padding-top: 2%;
 }
 
 #textToStartpage {
-	color: #1A0834;
-	font-family: Tahoma, Geneva, sans-serif;
-	text-align: right;
-	padding-right: 2.5%;
-	padding-top: 3%;
+    color: #1A0834;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: left;
 }
 
 #link {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 #main {
-	padding-left: 15%;
-	padding-right: 15%;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 5%;
 }
 
 #ueberschrift {
-	color: #1A0834;
-	font-family: Tahoma, Geneva, sans-serif;
+    color: #1A0834;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 #label {
-	font-family: Tahoma, Geneva, sans-serif;
-	color: #8A888E;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #8A888E;
 }
 
 #text {
-	color: #8A888E;
-	font-size: 1.25em;
-	font-family: Tahoma, Geneva, sans-serif;
+    color: #8A888E;
+    font-size: 1.25em;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 #emailFeld {
-	width: 100%;
-	height: 3%;
-	border-style: solid;
-	border-color: #DED9D9;
+    width: 100%;
+    height: 2em;
+    border-style: solid;
+    border-color: #DED9D9;
 }
 
 #nachricht {
-	width: 100%;
-	height: 10%;
-	border-style: solid;
-	border-color: #DED9D9;
-	resize: none;
+    width: 100%;
+    height: 10em;
+    border-style: solid;
+    border-color: #DED9D9;
+    resize: none;
 }
 
 #button {
-	border-style: solid;
-	border-color: #DED9D9;
-	background-color: white;
-	width: 25%;
-	height: 5%;
+    border-style: solid;
+    border-color: #DED9D9;
+    background-color: white;
+    width: 25%;
+    height: 3em;
 }
 
 #formular {
-	width: 45%;
-	height: 125%;
-	display: block;
-	float: left;
-	padding-right: 3%;
+    display: block;
+    float: left;
+    width: 30%;
+    height: 125%;
+    padding-right: 3%;
+    padding-left: 15%;
 }
 
 #info_bereich {
-	display: block;
-	padding-top: 1%; 
-	padding-left: 10%;
+    display: block;
+    float: right;
+    padding-top: 2%;
+    padding-right: 10%;
 }
 
 #footer {
-	padding-left: 15%;
-	padding-right: 15%;
-	padding-top: 1%;
-	padding-bottom: 2%;
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
 
 #icon {
-	width: 25px;
+    width: 25px;
 }
 
 #link {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .underline {
-	border-bottom: 2px solid #EE3C3C;
+    border-bottom: 2px solid #EE3C3C;
 }
 
 .sidenav {
@@ -137,7 +144,36 @@ body {
 	left: 5%;
 }
 
+.open_button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1912px) {
+    #info_bereich {padding-left: 15%; float: none}
+    #formular {float: none}
+}
+
+@media screen and (max-width: 1024px) {
+    #info_bereich {padding-left: 15%; float: none}
+    #formular {float: none}
+}
+
+@media screen and (max-width: 720px) {
+    #info_bereich {float: none; width: auto}
+    #formular {float: none; padding-right: 10%; width: auto}
+    #startseiteTextDiv {display: none; width: 0px; height: 0px}
+    #close_button {padding-right: 5%}
+    .sidenav a {padding: 7.5% 30% 7.5% 30%; text-align: center}
+    .open_button {font-size: 25px}
+}
+
 @media screen and (max-height: 450) {
-	.sidenav{padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
+
+    #info_bereich {float: none; width: auto}
+    #formular {float: none; padding-right: 10%; width: auto}
+    #startseiteTextDiv {display: none; width: 0px; height: 0px}
+    #close_button {padding-right: 5%}
+    .sidenav {padding-top: 15px}
+    .sidenav a {padding: 15% 30% 6% 30%; text-align: center; font-size: 18px}
 }

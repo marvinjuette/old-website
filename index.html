@@ -1,12 +1,16 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Nivram710</title>
-		<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets\index.css">
+        <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
 	</head>
 	<body>
 		<div id="navbar" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close_button">&times;</a>
 			<a href="index.html">Startseite</a>
 			<a href="kontakt.html">Kontakt</a>
 			<a href="about.html">About</a>
@@ -14,8 +18,9 @@
 			<a href="impressum.html">Impressum</a>
 		</div>	
 		<div id="main">
-			<img src="bilder/Logo-Homepage.png" id="header_bild">
+			<img src="bilder\Logo-Homepage.png" id="header_bild">
 			<button class="open_button" onclick="openNav()">☰</button>
+			<button id="pfeil" onclick=""></button>
 			<div id="info_bereich">
 				<section>
 					<h1 id="ueberschrift">
@@ -31,8 +36,8 @@
 					</p>
 				</section>
 			</div>
-			<div id="youtube-player">
-				<iframe width="1080" height="720" src="https://www.youtube.com/embed/RMYxr2Z6HjI?rel=0" frameborder="0" allowfullscreen></iframe>
+			<div id="youtube">
+				<iframe id="youtube-player" src="https://www.youtube.com/embed/RMYxr2Z6HjI?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<div id="video-kommentar">
 				<p>
@@ -45,25 +50,29 @@
 				<span  class="underline">
 					Folge mir:
 				</span>
-			<font>
+            </font>
 			<br><br>
 			<a href="http://yt.nivram710.de" id="link" title="YouTube" target="_blank">
-				<img src="bilder/YouTube.png" id="icon">
+				<img src="bilder\YouTube.png" id="icon">
 			</a>
 			<a href="http://twitter.nivram710.de" id="link" title="Twitter" target="_blank">
-				<img src="bilder/Twitter.png" id="icon">
+				<img src="bilder\Twitter.png" id="icon">
 			</a>
 			<a href="http://gp.nivram710.de" id="link" title="Google Plus" target="_blank">
-				<img src="bilder/Google-Plus.png" id="icon">
+				<img src="bilder\Google-Plus.png" id="icon">
 			</a>
 			<a href="http://gh.nivram710.de" id="link" title="GitHub" target="_blank">
-				<img src="bilder/github.png" id="icon">
+				<img src="bilder\github.png" id="icon">
 			</a>
-		</div>
+        </div>
 		<script>
 			function openNav() 
 			{
-				document.getElementById("navbar").style.width = "250px";
+                if(screen.width <= 720) {   
+                    document.getElementById("navbar").style.width = "100%";
+                } else {
+                    document.getElementById("navbar").style.width = "250px";
+                }
 			}
 			
 			function closeNav() 

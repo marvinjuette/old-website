@@ -4,13 +4,27 @@ body {
 	margin: 0px;
 }
 
+a {
+    color: forestgreen;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
 #main {
 	margin-right: auto;
 	margin-left: auto;
-	width: 35%;
+	width: 75%;
+}
+
+#main_ueberschrift {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #1A0834
 }
 
 #ueberschrift {
+    padding-top: 5%;
 	font-family: Tahoma, Geneva, sans-serif;
 	color: #1A0834
 }
@@ -66,7 +80,30 @@ body {
 	left: 5%;
 }
 
+.open_button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 720px) {
+    #close_button {padding-right: 5%}
+    #text {font-size: 1.1em}
+    #ueberschrift {font-size: 1.25em}
+    #main_ueberschrift {font-size: 1.7em}
+    body {padding-top: 10%; padding-left: 2.5%}
+    .sidenav a {padding: 7.5% 30% 7.5% 30%; text-align: center}
+    .open_button {font-size: 25px}
+}
+
 @media screen and (max-height: 450) {
-	.sidenav{padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
+	.sidenav {padding-top: 15px}
+	.sidenav a {font-size: 18px}
+    .sidenav a {padding: 15% 30% 6% 30%; text-align: center}
+    #close_button {padding-right: 5%}
+    #text {font-size: 1.1em}
+    #ueberschrift {font-size: 1.25em}
 }
