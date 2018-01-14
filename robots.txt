@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /bilder/
+Disallow: /stylesheets/
+Disallow: /templates/
+Sitemap: http://www.nivram710.de/sitemap.xml
