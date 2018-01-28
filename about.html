@@ -3,6 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Das ist meine offizielle Internetseite, hier findet ihr einige Fakten über mich.">
     <title>About</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/about.css">
     <link rel="icon" tpye="image/png" href="favicon.png" sizes="32x32">
@@ -19,8 +20,8 @@
         <a href="impressum.html">Impressum</a>
     </div>
 
-    
-    
+
+
     <div id="main">
         <button class="open_button" onclick="openNav()">☰</button>
         <h1 id="ueberschrift">About:</h1>
@@ -65,7 +66,7 @@
             <!-- Alles zu meiner Person-->
             <h2 id="ueberschrift">Zu meiner Person:</h2>
             <p id="text">
-                Ich heiße Marvin und bin 16 Jahre alt. Mein Hobby ist es zu Programmieren. Wie ich zu diesem Hobby gekommen bin? Ab der 6. Klasse wurde bei uns an der Schule eine sogenannte PC-AG angeboten, ich habe sie gewählt. So habe ich in der 6. und 7. Klasse die besagte PC-AG besucht. Es waren 2 Jahre voller Spaß! Dort habe ich vieles von meinem jetzigem Wissen über den Raspberry Pi oder über das Programmieren gelernt.
+                Ich heiße Marvin und bin <font id="geburtsdatum"></font> Jahre alt. Mein Hobby ist es zu Programmieren. Wie ich zu diesem Hobby gekommen bin? Ab der 6. Klasse wurde bei uns an der Schule eine sogenannte PC-AG angeboten, ich habe sie gewählt. So habe ich in der 6. und 7. Klasse die besagte PC-AG besucht. Es waren 2 Jahre voller Spaß! Dort habe ich vieles von meinem jetzigem Wissen über den Raspberry Pi oder über das Programmieren gelernt.
                 <br/><br/>Seit der 8. Klasse Leite ich selber die PC-AG und es macht mir viel Spaß den 5. und 6. Klässern das Thema Programmieren und Raspberry Pi näher zu bringen. Einige von den Projekten, die wir in der AG machen gibt es auch auf meinem YouTube-Kanal.
                 <br/><br/>Also wer Lust hat, einfach mal rein schauen!
             </p>
@@ -116,16 +117,19 @@
 
                 <a href="http://yt.nivram710.de" id="link">
                         <img src="bilder\YouTube.png" id="icon">
-                    </a>
+                </a>
                 <a href="http://twitter.nivram710.de" id="link">
                         <img src="bilder\Twitter.png" id="icon">
-                    </a>
+                </a>
                 <a href="http://gp.nivram710.de" id="link">
                         <img src="bilder\Google-Plus.png" id="icon">
-                    </a>
+                </a>
                 <a href="http://gh.nivram710.de" id="link">
                         <img src="bilder\github.png" id="icon">
-                    </a>
+                </a>
+                <a href="http://dc.nivram710.de" id="link" title="Discord" target="_blank">
+                    <img src="bilder\discord.png" id="icon">
+                </a>
             </div>
 
         </div>
@@ -143,6 +147,20 @@
         function closeNav() {
             document.getElementById("navbar").style.width = "0px";
         }
+
+        'use strict';
+        (function() {
+            function berechne() {
+                var jetzt = new Date(),
+                    geburtstagText = "07.10.2001",
+                    geburtsDatum = Date.parse(geburtstagText)
+                document.getElementById('geburtsdatum')
+                    .innerHTML = Math.floor(((jetzt - geburtsDatum) / 31536000000));
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                berechne();
+            });
+        }());
     </script>
 </body>
 </html>
