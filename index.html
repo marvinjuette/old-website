@@ -86,7 +86,7 @@
         (function() {
             function berechne() {
                 var jetzt = new Date(),
-                    geburtstagText = "07.10.2001",
+                    geburtstagText = "October 7, 2001",
                     geburtsDatum = Date.parse(geburtstagText)
                 document.getElementById('geburtsdatum')
                     .innerHTML = Math.floor(((jetzt - geburtsDatum) / 31536000000));
