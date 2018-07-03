@@ -11,7 +11,8 @@ contact@nivram710.de
 
 Viel Spaß mit dem Projekt!
 
-#
-Internetseite: www.nivram710.de
+## Status
+Aufgrund der DSGVO offline. Wenn ihr euch die Website anschauen wollt, dann ladet sie herunter und öffnet
+die index.html Datei.
 
 # Nivram710
