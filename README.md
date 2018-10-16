@@ -1,6 +1,6 @@
 # Meine Internetseite
 Der Code von meiner Internetseite
-#
+# 
 In den .html Datein steht der ganze Quellcode für die Internetseiten.
 In den .css Datein steht der ganze "Design-Code" für die Internetseiten. (Im Ordner sylesheets)
 
